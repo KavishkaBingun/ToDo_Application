@@ -1,0 +1,118 @@
+body{
+  background-color: #17181f;
+  color: #aaa; /*color of the text on background*/
+}
+*{
+  box-sizing: border-box;
+}
+
+main{
+  max-width: 300px;
+  margin: 20px auto;
+
+}
+
+.form{
+  border: 3px solid #30313D;
+  border-radius: 10px;
+  padding-left: 5px;
+  color: #aaa;
+  display: flex;
+  
+}
+
+#btntask{
+  background-color: #61DAFB;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#inputtask{
+  
+  background: none;
+  border: 0;
+  padding: 0 8px;
+  display: block;
+  width: 100%;
+  color: #fff;
+
+}
+
+
+div.testtask{
+  background-color: #30313D;
+  border-radius: 10px;
+  padding: 5px 9px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  transition: opacity .3s linear;
+ 
+  
+}
+
+.testtask svg{
+  margin-right: 6px;
+  fill: #61DAFB;
+  
+  
+}
+
+div.testtask.done{
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+
+div.task-name, div.task form{
+  flex-grow: 1;
+}
+
+div.testtask span{
+  position: relative;
+  flex-grow: 1;
+}
+
+div.testtask span:before{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  top: 10px;
+  transition: width .1s linear;
+}
+
+div.testtask.done span:before{
+  width:100%;
+}
+
+h1,h2{
+  text-align: center;
+}
+
+.Checkbox{
+  display: flex;
+  align-items: center;
+
+}
+
+button.trash{
+  background: none;
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+button.trash.svg{
+  fill: #aaa;
+  height: 14px;
+}
+
+div.testtask input{
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+
+
